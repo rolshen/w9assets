@@ -89,9 +89,6 @@ const run = async () => {
     outputPath: path.join(__dirname,  "output.pdf"),
     template: 'htmlbootstrap',  
     format: 'Letter',
-    include: [
-    path.join('./node_modules/bootstrap/dist/css'),
-    ],
   })
 
   await html5ToPDF.start().catch(err => console.error(err))
